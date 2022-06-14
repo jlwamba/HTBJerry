@@ -20,10 +20,15 @@ If you have trouble setting your home Lab to access hackthebox content, should y
 
 ```└─$ ping 10.10.10.95```            
 ```PING 10.10.10.95 (10.10.10.95) 56(84) bytes of data.```
+
 ```64 bytes from 10.10.10.95: icmp_seq=1 ttl=127 time=32.0 ms```
+
 ```64 bytes from 10.10.10.95: icmp_seq=2 ttl=127 time=31.7 ms```
+
 ```64 bytes from 10.10.10.95: icmp_seq=3 ttl=127 time=31.3 ms```
+
 ```--- 10.10.10.95 ping statistics ---```
+
 ```3 packets transmitted, 3 received, 0% packet loss, time 2002ms```
 ```rtt min/avg/max/mdev = 31.252/31.650/31.996/0.306 ms```
 
