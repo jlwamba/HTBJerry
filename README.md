@@ -48,7 +48,7 @@ I ran the command ```Nmap -sC -sV -T4  -Pn<IP Address> -oN <outputfile>```
 ```T4``` is the speed of the scan. not that, this method is crucial because you don't want to make to much noise in the network traffic so the ```T4``` would do it for you.
 ```oN``` is redirect that fouding into a file. This you would nao
 
+![scan](https://user-images.githubusercontent.com/61636217/173915915-977a8bd6-0ef2-4280-8b91-0ac00db0a277.png)
 
-![nmap](scan.png)
 
 
