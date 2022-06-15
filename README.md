@@ -38,11 +38,17 @@ Now we will proceed on scanning for open ports and enumerate all services runnin
 
 To discover what services are currently running on the target machine, I used ```Nmap``` however there other tools that can give you the same output as ```nmap```.
 
+
+#Nmap
+
 I ran the command ```Nmap -sC -sV -T4  -Pn<IP Address> -oN <outputfile>```
 
 ```sC``` is for default scripts scan.
 ```sV``` is for version of the services runnimg.
 ```T4``` is the speed of the scan. not that, this method is crucial because you don't want to make to much noise in the network traffic so the ```T4``` would do it for you.
 ```oN``` is redirect that fouding into a file. This you would nao
+
+
+![nmap](scan.png)
 
 
