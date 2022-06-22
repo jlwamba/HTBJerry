@@ -28,7 +28,7 @@ Now we will proceed on scanning for open ports and enumerate all services runnin
 To discover what services are currently running on the target machine, I used ```Nmap``` however there other tools that can give you the same output as ```nmap```.
 
 
-# Nmap
+# Enumeration with Nmap
 
 
 ```Nmap -sC -sV -T4  -Pn <IP Address> -oN <outputfile>```
@@ -40,7 +40,7 @@ To discover what services are currently running on the target machine, I used ``
 
 ![scan](https://user-images.githubusercontent.com/61636217/173915915-977a8bd6-0ef2-4280-8b91-0ac00db0a277.png)
 
-# Gobuster
+# Enumeration with Gobuster
 
 After we have ran the ```Nmap``` command we have discovered that there is 2 open ports on our target machine.
 
