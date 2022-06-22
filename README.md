@@ -41,14 +41,23 @@ To discover what services are currently running on the target machine, I used ``
 
 #Nmap
 
-I ran the command ```Nmap -sC -sV -T4  -Pn<IP Address> -oN <outputfile>```
+I ran the command ```Nmap -sC -sV -T4  -Pn <IP Address> -oN <outputfile>```
 
 ```sC``` is for default scripts scan.
 ```sV``` is for version of the services runnimg.
-```T4``` is the speed of the scan. not that, this method is crucial because you don't want to make to much noise in the network traffic so the ```T4``` would do it for you.
+```T4``` is the speed of the scan. not that, this method is crucial because you don't want to make to much noise in the network traffic so declaring a speed of four the best you need for a fast scan.
 ```oN``` is redirect that fouding into a file. This you would nao
 
 ![scan](https://user-images.githubusercontent.com/61636217/173915915-977a8bd6-0ef2-4280-8b91-0ac00db0a277.png)
 
+#Gobuster
 
+After we have ran the ```Nmap``` command we have discovered that there is 2 open ports on our target machine.
 
+```22``` & ``8080``. We noticed that a Tomcat is running on that machine.
+Before going deep in the attack we must first try enumerate some port on port 8080 to find out what directory are hosted in the application adn for that I ran ```Gobuster``` for directory discovery.
+
+``` gobuster dir --url  http://<ip> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100```
+we discover an interesting directory ```Manager```.
+From this step there are differents way you can plan your attack. Here We are going to exploit a misconfigure Tomcat Server.
+by default All Tomcat creds are ```tomcat``` & ```s3cret```. but there are other ways to get creds.Navitgating to that Manager directory on port 8080 we prompted with sign in option. to get creds the easy way is the hit the ```cancel``` button and you will redirected to an error that display the credentials in plain text. Or you can use ``Metasploit`` to run an exploit against Tomcat server to get the credentials.
