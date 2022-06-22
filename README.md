@@ -60,7 +60,7 @@ Before going deep in the attack we must first try enumerate some port on port 80
 ``` gobuster dir --url  http://<ip> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100```
 we discover an interesting directory ```Manager```.
 From this step there are differents way you can plan your attack. Here We are going to exploit a misconfigure Tomcat Server.
-by default All Tomcat creds are ```tomcat``` & ```s3cret```. but there are other ways to get creds.Navitgating to that Manager directory on port 8080 we prompted with sign in option. to get creds the easy way is the hit the ```cancel``` button and you will redirected to an error that display the credentials in plain text. Or you can use ``Metasploit`` to run an exploit against Tomcat server to get the credentials.
+by default All Tomcat creds are ```tomcat``` & ```s3cret```. but there are other ways to get creds.Navitgating to that Manager directory on port 8080 we prompted with sign in option. to get creds the easy way is the hit the ```cancel``` button and you will redirected to a ```401 Unauthorized``` that display the credentials in plain text. Or you can use ``Metasploit`` to run an exploit against Tomcat server to get the credentials.
 
 
 
