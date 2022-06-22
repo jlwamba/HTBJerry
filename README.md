@@ -85,7 +85,7 @@ Our payloads executed well and gave us a shell. We then proceed to navigate our 
 
 ![flags](https://user-images.githubusercontent.com/61636217/175169915-39c55c4d-b7a1-408e-926f-4c42c5990559.png)
 
-For the machine we did not need to escalated our privileges  to get the root flag because we had the ``` Two for one ``` flags in one file.
+For this machine we did not need to escalated our privileges  to get the root flag because we had the ``` Two for one ``` flags in one file.
 This was my first machine I worked on on ```Hackthebox``` it is realistic as Apache Tomcat who is often found configured with common or weak credentials.
 
 
