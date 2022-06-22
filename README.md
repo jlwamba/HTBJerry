@@ -61,3 +61,15 @@ Before going deep in the attack we must first try enumerate some port on port 80
 we discover an interesting directory ```Manager```.
 From this step there are differents way you can plan your attack. Here We are going to exploit a misconfigure Tomcat Server.
 by default All Tomcat creds are ```tomcat``` & ```s3cret```. but there are other ways to get creds.Navitgating to that Manager directory on port 8080 we prompted with sign in option. to get creds the easy way is the hit the ```cancel``` button and you will redirected to an error that display the credentials in plain text. Or you can use ``Metasploit`` to run an exploit against Tomcat server to get the credentials.
+
+
+
+![8080](https://user-images.githubusercontent.com/61636217/175167658-cc992ea4-6978-43ab-ad94-e186c93ab26d.png)
+
+![signin](https://user-images.githubusercontent.com/61636217/175167703-d26fcaa2-e862-45e8-ae76-ed85f98c9fda.png)
+
+
+![creds](https://user-images.githubusercontent.com/61636217/175167731-af77b831-5f62-4c9a-b87a-d3bd4ad4ba48.png)
+
+![manager](https://user-images.githubusercontent.com/61636217/175167776-b4adf04a-afc3-4998-b984-2b408783d7aa.png)
+
