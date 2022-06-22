@@ -39,7 +39,7 @@ I ran the command ```Nmap -sC -sV -T4  -Pn <IP Address> -oN <outputfile>```
 
 ![scan](https://user-images.githubusercontent.com/61636217/173915915-977a8bd6-0ef2-4280-8b91-0ac00db0a277.png)
 
-#Gobuster
+# Gobuster
 
 After we have ran the ```Nmap``` command we have discovered that there is 2 open ports on our target machine.
 
@@ -51,7 +51,7 @@ we discover an interesting directory ```Manager```.
 From this step there are differents way you can plan your attack. Here We are going to exploit a misconfigure Tomcat Server.
 by default All Tomcat creds are ```tomcat``` & ```s3cret```. but there are other ways to get creds.Navitgating to that Manager directory on port 8080 we prompted with sign in option. to get creds the easy way is the hit the ```cancel``` button and you will redirected to a ```401 Unauthorized``` that display the credentials in plain text. Or you can use ``Metasploit`` to run an exploit against Tomcat server to get the credentials.
 
-
+# Attack
 
 ![8080](https://user-images.githubusercontent.com/61636217/175167658-cc992ea4-6978-43ab-ad94-e186c93ab26d.png)
 
