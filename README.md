@@ -4,14 +4,14 @@ Welcome all to my ``Offensive Security`` journey and first ever write up.
 I have been active on ```HackTheBox``` and `Tryhackme` since December 2020.
 However I have only been able to work on few  machines during the last two years while learning about ```Info-Sec``` fundamentals on ```TryHackMe``` and others few online platforms, also while I completed my degree.
 
-Before we dive in the write up  for the first machine i Pwned that is```Jerry``` ,it's important to note that prior rooting the first machine on ```Hackthebox``` I have quasi zero experience ``Hacking``.
+Before we dive in the write up  for the first machine i Pwned that is```Jerry``` ,it's important to note that prior rooting the first machine on ```Hackthebox``` I have quasi zero experience in ``Hacking`` neither in infornation security. Since then I have been on mission to learn more about information. I then dedicated myself to pursue knowledge in this interesting field.
 
 If you are new to ```Cyber Security```, there are many platforms out there that can help you get the knowledge .
-As of now I am still learner and I believe in this industry ```Learning don't Stop```. I am currently going for my first certification that is the ```eJPT``` from ```Elearnsecurity```.
+As of now I am still learner and I believe in this industry ```Learning don't Stop```. I am currently going for my first certification that is the ```eJPT``` from ```Elearnsecurity```. in the next step I would be guiding to how i hacked my first machine on Hackthebox.
 
-# Set UP
+# Set-up
 
-If you have trouble setting your home Lab to access hackthebox content, should you refer to youtube. There are tons  of videos that can help you set up your box.
+Note that i left out some of the step I took like, setting up the box, connecting to the vpn and more. let's get into now.
 
 # Jerry
 
@@ -30,7 +30,8 @@ To discover what services are currently running on the target machine, I used ``
 
 # Nmap
 
-I ran the command ```Nmap -sC -sV -T4  -Pn <IP Address> -oN <outputfile>```
+
+```Nmap -sC -sV -T4  -Pn <IP Address> -oN <outputfile>```
 
 ```sC``` is for default scripts scan.
 ```sV``` is for version of the services runnimg.
