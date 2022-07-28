@@ -4,14 +4,10 @@ Welcome all to my ``Offensive Security`` journey and first ever write up.
 I have been active on ```HackTheBox``` and `Tryhackme` since December 2020.
 However I have only been able to work on few  machines during the last two years while learning about ```Info-Sec``` fundamentals on ```TryHackMe``` and others few online platforms, also while I completed my degree.
 
-Before we dive in the write up  for the first machine i Pwned that is```Jerry``` ,it's important to note that prior rooting the first machine on ```Hackthebox``` I have quasi zero experience in ``Hacking`` neither in infornation security. Since then I have been on mission to learn more about information. I then dedicated myself to pursue knowledge in this interesting field.
+Before we dive in the write up  for the first machine I Pwned that is```Jerry``` ,it's important to note that prior rooting the first machine on ```Hackthebox``` I had quasi zero experience in ``Hacking`` neither in infornation security. Since then, I have been on mission to learn more about information Security. I then dedicated myself to pursue knowledge in this interesting field.
 
-If you are new to ```Cyber Security```, there are many platforms out there that can help you get the knowledge .
-As of now I am still learner and I believe in this industry ```Learning don't Stop```. I am currently going for my first certification that is the ```eJPT``` from ```Elearnsecurity```. in the next step I would be guiding to how i hacked my first machine on Hackthebox.
-
-# Set-up
-
-Note that i left out some of the step I took like, setting up the box, connecting to the vpn and more. let's get into now.
+If you are new to ```Cyber Security```, there are many platforms out there that can help you get the knowledge.
+As of now I am still a learner and I believe in this industry ```Learning don't Stop```. I am currently going for my first certification that is the ```eJPT``` from ```Elearnsecurity```. in the next step I would be taking you through how I hacked my first machine on Hackthebox.
 
 # Jerry
 
@@ -21,8 +17,8 @@ Note that i left out some of the step I took like, setting up the box, connectin
 
 
 
-From the ping command we can identify that our target machine runs on ```Windows OS``` by looking at the ```TTL(Time to live)``` response. This a trick that I learned from some of the big names I watched sovling boxes on Youtube.
-We have ping the machine and it echoed back to us.
+From the ping command we can identify that our target machine runs on ```Windows OS``` by looking at the ```TTL(Time to live)``` response. This a trick that I learned from some of the big names I watched sovling boxes on Youtube like ```ippsec```, ```hackersploit``` and the ```Ofefensive Security (S1REN)``` my Favorite to Hackers to watch.
+Here We have pinged the machine and it echoed back to us.
 Now we will proceed on scanning for open ports and enumerate all services running on our target machine.
 
 To discover what services are currently running on the target machine, I used ```Nmap``` however there other tools that can give you the same output as ```nmap```.
@@ -80,6 +76,13 @@ Our payloads executed well and gave us a shell. We then proceed to navigate our 
 ![flags](https://user-images.githubusercontent.com/61636217/175169915-39c55c4d-b7a1-408e-926f-4c42c5990559.png)
 
 For this machine we did not need to escalated our privileges  to get the root flag because we had the ``` Two for one ``` flags in one file.
-This was my first machine I worked on on ```Hackthebox``` it is realistic as Apache Tomcat who is often found configured with common or weak credentials.
+This was Pwned machine on ```Hackthebox``` it is a realistic as Apache Tomcat server which is often found configured with weak credentials.
 
+
+# End
+Stay tune for more content to come on my journey. Note that hacking is very complexe and therefore you must have strong understanding of how networks servive work to be able to find the right approach to compromised your target.
+
+# Disclaimer.
+
+Per law Hacking is strickly illigal. You must have written permissions to contact this type of activities. Faillure to do may result you being in hot waters with the Law. There are tons of platforms online that can give you the opportunity to learn these skills and practice them on misconfigure machine that they provide. Get the knowledge and  get authorization to hack. 
 
